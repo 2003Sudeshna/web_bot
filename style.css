@@ -127,7 +127,7 @@ li
 .hero
 {
     margin-top: 40px;
-    background-image: url(./images/cyberpunk.jpg);
+    background-image: url(cyberpunk.jpg);
     height: 90vh;
     width: 100%;
     background-position: center;
