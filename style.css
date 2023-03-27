@@ -1,0 +1,282 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.logo img
+{
+   padding-top: px;
+}
+body
+{
+    background-color: rgb(14, 14, 13);
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+a
+{
+    text-decoration: none;
+    
+}
+li
+{
+    list-style: none;
+}
+.items
+{
+    list-style: none;
+    padding: 0px 20px;
+    
+}
+.item
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.items a
+{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: medium;
+    transition: all 1s ease-in-out;
+}
+.items a:hover
+{
+    color: aqua;
+    border-bottom: 1px solid aqua;
+}
+.logo a
+{
+    text-decoration: none;
+    color: aqua;
+}
+.bar
+{
+    color: wheat;
+    cursor: pointer;
+    margin-right: 12px;
+    display: none;
+}
+.navbar
+{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 5px 10px rgb(54, 53, 53);
+    z-index: 1;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding:10px;
+}
+/*dropdown*/
+.dropdown
+{
+    display: none;
+    position:absolute;
+    right: 1rem;
+    height: 0px;
+    top:60px;
+    width: 300px;
+    background:rgba(170, 156, 156, 0.1);
+    backdrop-filter: blur(150px);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.82, 0.32, 1.275);
+}
+.dropdown.open
+{
+    height: 240px;
+}
+.dropdown li
+{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* responsibe navbar */
+@media(max-width:700px) {
+    .items
+    {
+        display: none;
+    }
+    .bar
+    {
+        display: block;
+    }
+    .dropdown
+    {
+        display: block;
+        background-color: aliceblue;
+    }
+    .navbar{
+        position: absolute;
+    }
+}
+.hero
+{
+    margin-top: 40px;
+    background-image: url(./images/cyberpunk.jpg);
+    height: 90vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 100px 0px 0px 30px;
+    
+}
+.hero h1
+{
+    text-shadow: 4px 4px 4px rgb(47, 97, 145),4px 4px 4px rgb(11, 5, 17);
+    font-style: italic;
+    font-size:100px;
+    color: rgb(25, 175, 138);
+   
+}
+.hero p
+{
+    font-size: x-large;
+    color: rgb(200, 224, 92);
+    margin-top: 20px;
+}
+.hb
+{
+    margin-top: 100px;
+   padding: 8px;
+   background:none;
+   color:beige;
+   background-color: rgb(78, 17, 17);
+   border-radius:10px;
+   font-weight: bolder;
+}
+.hb:hover
+{
+    background-color: rgb(226, 148, 46);
+    color: rgb(11, 5, 17);
+
+}
+.games 
+{
+   margin:50px 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.games h1
+{
+    font-size:50px;
+    color: aliceblue;
+}
+.games p
+{
+    color: wheat;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.fs img
+{
+    height: 50px;
+    width: auto;
+    box-shadow: 2px 2px 2px 2px rgb(194, 214, 231);
+   
+}
+.des p
+{
+    color: aliceblue;
+}
+.star
+{
+    color: gold;
+}
+.gamestore
+{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.acessories
+{
+    margin-top: 50px;
+}
+.about h1,p
+{
+   color: antiquewhite;
+}
+.about h1
+{
+    color: gold;
+    font-size: x-large;
+}
+.about
+{
+    margin-top: 100px;
+}
+.cyber
+{
+    margin-top: 80px;
+}
+.about
+{
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+   align-items: center;
+}
+.abtcyber
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cp
+{
+    height: 500px;
+    width: 500px;
+    padding-top: 70px;
+}
+.cp h2
+{
+    color: gold;
+    margin:10px 5px;
+}
+.copyright
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pa
+{
+    margin-top: 20px;
+    width: 400px;
+    height: 400px;
+}
+.vdo
+{
+    margin-left: 40px;
+}
+.trail
+{
+    color: gold;
+    margin-left: 50px;
+}
+
+
